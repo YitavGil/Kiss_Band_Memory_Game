@@ -60,19 +60,28 @@ body{
 }
 
 .score {
-    width: 10vw;
-    height: 10vh;
-    border: 2px solid rgb(95, 27, 27);
-    font-family: fantasy;
-    position: absolute;
-    left: 12rem;
-    top: 3rem;
-    display: flex;
-    justify-content: center;
-
+  width: 10vw;
+  height: 10vh;
+  border: 2px solid rgb(95, 27, 27);
+  font-family: fantasy;
+  position: absolute;
+  left: 12rem;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
+
 .score p {
-    color: rgb(109, 15, 15);
+  color: rgb(109, 15, 15);
+  margin: 5px 0;
+}
+
+#score-value {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .buttons {
@@ -85,7 +94,7 @@ body{
 }
 
 .play, .reset {
-    font-size: 4rem;
+    font-size: 30px;
       background-color: transparent ;
     display: inline-block;
      cursor: pointer;
@@ -96,6 +105,7 @@ body{
       text-align: center;
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em;
     position: relative;
+    padding: 10px;
 }
 
 .play::before,
